@@ -56,17 +56,25 @@ function novo(i)
     let filho = document.createElement("article");
     filho.id = "item_"+(Number(i)+1);
     let conteudo = `
-    <img src="${ITENS_LOJA[i].url_img}">
-    <h1>${ITENS_LOJA[i].nome}</h1>
-    <p><strong>Preço:</strong> R$${ITENS_LOJA[i].preco}</p>
-    <p><strong>Descrição:</strong></p>
-    <p>${ITENS_LOJA[i].descricao}</p>
-    `;
+        <img src="${ITENS_LOJA[i].url_img}">
+    
+        <h1>${ITENS_LOJA[i].nome}</h1>
+    
+        <p><strong>Preço:</strong> R$${ITENS_LOJA[i].preco}</p>
+        <p><strong>Descrição:</strong></p>
+        <p>${ITENS_LOJA[i].descricao}</p>
+        `;
 
     filho.innerHTML = conteudo;
     pai.appendChild(filho);
-
 }
 
+function main()
+{
+    for (item in ITENS_LOJA)
+    {
+        novo(item);       
+    }
+}
 
 main();
