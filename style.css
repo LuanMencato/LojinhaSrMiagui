@@ -1,0 +1,46 @@
+body
+{
+    font: bolder 15px Arial;
+    text-align: center;
+}
+
+h1
+{
+    font: bold 30px Arial;
+    text-align: center;
+}
+
+p
+{
+    font: normal 15px Arial;
+    text-align: center;
+}
+
+img
+{
+    width: 55%;
+}
+
+article
+{
+    margin: 5px;
+    width: 240px;
+    height: 340px;
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: rgb(18, 18, 109);
+    border-radius: 10px;    
+}
+
+article h1
+{
+    margin: 0px;
+}
+
+section section
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
